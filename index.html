@@ -412,7 +412,97 @@
 <div class="panel panel-default">
     <table class="table table-hover">
         <tbody>
+            <div class="panel panel-default">
+                <table class="table table-hover">
+                    <tbody>
                         <!-------------------------------------------------->
+                        <!-- <tr> -->
+                            <td>
+                                <span class="label label-primary">A2</span>
+                            </td>
+                            <td>
+                                <h4 class="list-group-item-heading">
+                                    <a href="https://arxiv.org/html/2402.13513v1">Guac: Energy-Aware and SSA-Based Generation of Coarse-Grained Merged Accelerators from LLVM-IR. </a>
+                                    <span class="badge"><a class="conf"
+                                        target="_blank"
+                                        href="https://arxiv.org/">
+                                        Arxiv '24</a></span>
+                                </h4>
+                                <p class="author">
+                                    Iulian Brumar, Rodrigo Rocha, Alex Bernat, <strong>Devashree Tripathy</strong>, David Brooks, Gu-Yeon Wei, CoRR abs/2402.13513 (2024)<br> (with <a href=https://www.harvard.edu/> Harvard University</a>  and <a href=https://www.ed.ac.uk/> University of Edinburgh, UK</a>)<br>
+
+                                </p>
+                                <button type="button" class="btn btn-success btn-xs"
+                                    data-target="#isca23-abs"
+                                    data-toggle="collapse">Abstract</button>
+                                <button type="button" class="btn btn-info btn-xs"
+                                    data-target="#isca23-bib"
+                                    data-toggle="collapse">Bib</button>
+                                <div id="isca23-abs" class="collapse">
+                                    <info>
+                                        Designing accelerators for resource- and power-constrained applications is a daunting task. High-level Synthesis (HLS) addresses these constraints through resource sharing, an optimization at the HLS binding stage that maps multiple operations to the same functional unit.
+
+                                        However, resource sharing is often limited to reusing instructions within a basic block. Instead of searching globally for the best control and dataflow graphs (CDFGs) to combine, it is constrained by existing instruction mappings and schedules.
+
+                                        Coarse-grained function merging (CGFM) at the intermediate representation (IR) level can reuse control and dataflow patterns without dealing with the post-scheduling complexity of mapping operations onto functional units, wires, and registers. The merged functions produced by CGFM can be translated to RTL by HLS, yielding Coarse Grained Merged Accelerators (CGMAs). CGMAs are especially profitable across applications with similar data- and control-flow patterns. Prior work has used CGFM to generate CGMAs without regard for which CGFM algorithms best optimize area, power, and energy costs.
+
+                                        We propose Guac, an energy-aware and SSA-based (static single assignment) CGMA generation methodology. Guac implements a novel ensemble of cost models for efficient CGMA generation. We also show that CGFM algorithms using SSA form to merge control- and dataflow graphs outperform prior non-SSA CGFM designs. We demonstrate significant area, power, and energy savings with respect to the state of the art. In particular, Guac more than doubles energy savings with respect to the closest related work while using a strong resource-sharing baseline.
+                                                                            </info>
+                                </div>
+                                <div id="isca23-bib" class="collapse">
+                                    @article{brumar2024guac,
+                                        title={Guac: Energy-Aware and SSA-Based Generation of Coarse-Grained Merged Accelerators from LLVM-IR},
+                                        author={Brumar, Iulian and Rocha, Rodrigo and Bernat, Alex and Tripathy, Devashree and Brooks, David and Wei, Gu-Yeon},
+                                        journal={arXiv preprint arXiv:2402.13513},
+                                        year={2024}
+                                        }
+                                </div>
+                            </td>
+                        </tr>
+                        <!-------------------------------------------------->
+                        <!-------------------------------------------------->
+                        <tr>
+                            <td>
+                                <span class="label label-primary">A1</span>
+                            </td>
+                            <td>
+                                <h4 class="list-group-item-heading">
+                                    <a href="https://arxiv.org/html/2402.13513v1">PerfSAGE: Generalized Inference Performance Predictor for Arbitrary Deep Learning Models on Edge Devices </a>
+                                    <span class="badge"><a class="conf"
+                                        target="_blank"
+                                        href="https://arxiv.org/">
+                                        Arxiv '23</a></span> 
+                                </h4>
+                                <p class="author">
+                                    Y Chai, D Tripathy, C Zhou, D Gope, I Fedorov, R Matas, D Brooks, GY Wei, P Whatmough, arXiv preprint arXiv:2301.10999, 2023
+                                     CoRR abs/2402.13513 (2024)<br> (with <a href=https://www.harvard.edu/> Harvard University</a>  and <a href=https://www.arm.com/> ARM Research, USA</a>)<br>
+
+                                </p>
+                                <button type="button" class="btn btn-success btn-xs"
+                                    data-target="#isca23-abs"
+                                    data-toggle="collapse">Abstract</button>
+                                <button type="button" class="btn btn-info btn-xs"
+                                    data-target="#isca23-bib"
+                                    data-toggle="collapse">Bib</button>
+                                <div id="isca23-abs" class="collapse">
+                                    <info>
+                                        
+                                    </info>
+                                </div>
+                                <div id="isca23-bib" class="collapse">
+                                    @article{chai2023perfsage,
+                                        title={PerfSAGE: Generalized Inference Performance Predictor for Arbitrary Deep Learning Models on Edge Devices},
+                                        author={Chai, Yuji and Tripathy, Devashree and Zhou, Chuteng and Gope, Dibakar and Fedorov, Igor and Matas, Ramon and Brooks, David and Wei, Gu-Yeon and Whatmough, Paul},
+                                        journal={arXiv preprint arXiv:2301.10999},
+                                        year={2023}
+                                      }
+                                </div>
+                            </td>
+                        </tr>
+                        <!-------------------------------------------------->
+
+                        
+        
                         <tr>
                             <td>
                                 <span class="label label-primary">C7</span>
@@ -423,8 +513,8 @@
                                         Machine-Learning Assisted Architecture Design.</a>
                                     <span class="badge"><a class="conf"
                                             target="_blank"
-                                            href="https://www.iscaconf.org/isca2023/">ISCA
-                                            '23</a></span>
+                                            href="https://www.iscaconf.org/isca2023/">
+                                            ISCA '23</a></span>
                                 </h4>
                                 <p class="author">
                                     Srivatsan Krishnan, Amir Yazdanbakhsh, Jason Jabbour, Ikechukwu Uchendu, Susobhan Ghosh, Behzad Boroujerdian, Daniel Richins, <strong>Devashree Tripathy</strong>, Aleksandra Faust, and Vijay Janapa Reddi (with Harvard University, University of Texas at Austin, Google Research/ Brain Team and Facebook Research)<br>
